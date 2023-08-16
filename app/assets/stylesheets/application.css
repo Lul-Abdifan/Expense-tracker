@@ -1,15 +1,63 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
+ *= require font-awesome
  */
+
+
+.fa-search{
+  padding:20px;
+  color:red;
+    background-color: red;
+}
+.splash {
+    text-align: center;
+    
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-top: 40%;
+    margin-bottom: 15rem;
+  }
+  
+  .sign-buttons a{
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  text-decoration: none;
+    border-radius: 5px;
+  
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .sign-in-button{
+   
+    background-color: #0057ff;
+    color: #FFFFFF;
+    margin-top: 10px;
+  }
+  .sign-up-button{
+   
+    color: rgba(49, 39, 39, 0.678);
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0.3;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .splash h1 {
+    animation: fadeIn 3.5s ease-in-out;
+  }
+  /* .sign-up-navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+   */
