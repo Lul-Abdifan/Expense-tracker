@@ -2,59 +2,58 @@
  *= require font-awesome
  */
 
-
-.fa-search{
-  padding:20px;
-  color:red;
-    background-color: red;
+.fa-search {
+  padding: 20px;
+  color: red;
+  background-color: red;
 }
+
 .splash {
-    text-align: center;
-    
-  }
-  
-  h1 {
-    font-size: 2rem;
-    margin-top: 40%;
-    margin-bottom: 15rem;
-  }
-  
-  .sign-buttons a{
-  
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-top: 40%;
+  margin-bottom: 15rem;
+}
+
+.sign-buttons a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-decoration: none;
-    border-radius: 5px;
-  
-    font-size: 1rem;
-    padding: 1rem 2rem;
-    transition: background-color 0.3s ease-in-out;
-  }
-  .sign-in-button{
-   
-    background-color: #0057ff;
-    color: #FFFFFF;
-    margin-top: 10px;
-  }
-  .sign-up-button{
-   
-    color: rgba(49, 39, 39, 0.678);
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.sign-in-button {
+  background-color: #0057ff;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.sign-up-button {
+  color: rgba(49, 39, 39, 0.678);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.3;
   }
 
-  @keyframes fadeIn {
-    from {
-      opacity: 0.3;
-    }
-    to {
-      opacity: 1;
-    }
+  to {
+    opacity: 1;
   }
-  
-  .splash h1 {
-    animation: fadeIn 3.5s ease-in-out;
-  }
-  /* .sign-up-navbar{
+}
+
+.splash h1 {
+  animation: fadeIn 3.5s ease-in-out;
+}
+
+/* .sign-up-navbar{
     display: flex;
     flex-direction: row;
     justify-content: center;
