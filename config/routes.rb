@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   
   resources :categories, only: [:create, :new, :index] do
-    resources :entities
+    resources :entities, only: [:create, :new, :index]
   end
 
 end
