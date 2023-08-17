@@ -12,9 +12,7 @@
 <div id="categories">
   <% @categories.each do |category| %>
     <%= render category %>
-    <p>
-      <%= link_to "Show this category", category %>
-    </p>
+  
   <% end %>
 </div>
-<div> <i class="fa-solid fa-plus"></i> <%= link_to "Add Category", new_category_path %> </div>
+<div class="category-submit"><%= link_to "Add Category", new_category_path,class: "category-submit-icon" %> </div>
