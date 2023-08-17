@@ -1,14 +1,17 @@
-<p style="color: green"><%= notice %></p>
+<div class="category-navbar">
+ <%= link_to categories_path do %>
+         <i class="fas fa-sharp fa-light fa-arrow-left"></i> 
+      <% end %> 
+<h1>Transaction</h1>
 
-<h1>Entities</h1>
-
+<p> Total Transaction</p>
+</div>
 <div id="entities">
   <% @entities.each do |entity| %>
     <%= render entity %>
-    <p>
-      <%= link_to "Show this entity", entity %>
-    </p>
+ 
   <% end %>
 </div>
-
-<%= link_to "New entity", new_entity_path %>
+<div class="entity-submit">
+<%= link_to "New entity", new_category_entity_path , class:"entity-submit-icon"%>
+</div>

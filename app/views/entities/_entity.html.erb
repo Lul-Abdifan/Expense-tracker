@@ -1,22 +1,25 @@
-<div id="<%= dom_id entity %>">
+<div id="<%= dom_id entity %>" class="entity-item">
+  <div>
   <p>
-    <strong>Name:</strong>
+
     <%= entity.name %>
   </p>
-
   <p>
-    <strong>Amount:</strong>
-    <%= entity.amount %>
+    
+   <%= Time.now.strftime('%B %d, %Y') %>
   </p>
-
+  </div>
+  <div>
+  <p>
+  
+    $<%= entity.amount %>
+  </p>
+  </div> 
+  <div>
   <p>
     <strong>Category:</strong>
     <%= entity.category_id %>
   </p>
-
-  <p>
-    <strong>User:</strong>
-    <%= entity.user_id %>
-  </p>
+</div>
 
 </div>
