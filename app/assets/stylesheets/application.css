@@ -54,7 +54,7 @@ margin-top: 20px;
 background-color: white
 }
 
-.category-submit, .forgot-to-sign-in {
+.entity-item,.category-item,.category-submit,.entity-submit,.forgot-to-sign-in {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,13 +63,18 @@ background-color: white
     color: #434654;
     background-color: rgba(247, 244, 244, 0.952);
 }
-.category-submit-icon{
+.entity-item,.category-item{
+  background-color: white;
+ justify-content: space-between;
+ padding: 0px 20px;
+}
+.entity-submit-icon,.category-submit-icon{
   padding:10px 10px;
   border-radius: 5px;
   font-weight: bolder;
   cursor: pointer;
 }
-.new-category,.category-navbar,.sign-up-navbar, .login-navbar{
+.new-entity,.new-category,.category-navbar,.sign-up-navbar, .login-navbar{
 
   background-color: #3778C2;
     display: flex;
@@ -79,10 +84,11 @@ background-color: white
     padding:10px;
     color:white;
   }
-  input[type="submit"]{
+  input[type="submit"],.entity-submit-icon,.category-submit-icon{
     background: #3778C2;
     color: white;
     border: none;
+    text-decoration: none;
    
   }
   .fa-arrow-left{
@@ -116,4 +122,9 @@ background-color: white
 .fa-circle-user{
   margin-right: 20px;
  color: #a3a6b1d3;
+}
+.entities-list{
+  text-decoration: none;
+  color:#434654;
+  font-size: 25px;
 }
