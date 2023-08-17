@@ -4,25 +4,23 @@
      <%= link_to root_path do %>
         <i class="fas fa-sharp fa-light fa-arrow-left"></i> 
       <% end %> 
-      <h2>Log in</h2> 
+      <h2>LOG IN</h2> 
       <div class="actions">
         <%= f.submit "Log in" %>
       </div>
     </div>
+    <div class="sign-container">
     <div class="field">
-      <%= f.label :email %><br />
-      <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+   
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email" %>
     </div>
 
     <div class="field">
-      <%= f.label :password %><br />
-      <%= f.password_field :password, autocomplete: "current-password" %>
+      <%= f.password_field :password, autocomplete: "current-password", placeholder: "Password" %>
     </div>
 
-  
-
+  </div>
+<%= render "devise/shared/links",class:"forgot-to-sign-in"%>
     
   </div>
 <% end %>
-
-<%= render "devise/shared/links" %>
