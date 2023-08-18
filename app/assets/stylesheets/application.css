@@ -4,9 +4,16 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-.notification,
 .splash {
   text-align: center;
+}
+
+.notification {
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(51, 23, 58, 0.548);
 }
 
 .expense-tracker {
