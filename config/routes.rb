@@ -8,8 +8,8 @@ Rails.application.routes.draw do
   root 'splash#index'
 
   
-  resources :categories do
-    resources :entities
+  resources :categories, only: [:create, :new, :index] do
+    resources :entities, only: [:create, :new, :index]
   end
 
 end
