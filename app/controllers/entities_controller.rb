@@ -5,6 +5,7 @@ class EntitiesController < ApplicationController
   def index
     @category = Category.find(params[:category_id])
     @entities = @category.entities.order(created_at: :desc)
+    @total_amount = @category.entities.sum(:amount)
   end
 
   # GET /entities/1 or /entities/1.json
@@ -22,7 +23,7 @@ class EntitiesController < ApplicationController
   def create
     @entity = Entity.new(entity_params)
     @entity.author_id = current_user.id
-    @entity.category_id = params[:category_id]
+ 
 
     respond_to do |format|
       if @entity.save
