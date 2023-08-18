@@ -17,11 +17,12 @@
 <div>
 <p>
   <% if category.entities.exists? %>
-    <%= "$" %><%= category.entities.sum(:amount) %>
+    $<%= category.entities.sum(:amount) %>
   <% else %>
     $0
   <% end %>
 </p>
+
 
 
 </div>
