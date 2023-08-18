@@ -23,7 +23,6 @@ class EntitiesController < ApplicationController
   def create
     @entity = Entity.new(entity_params)
     @entity.author_id = current_user.id
- 
 
     respond_to do |format|
       if @entity.save
