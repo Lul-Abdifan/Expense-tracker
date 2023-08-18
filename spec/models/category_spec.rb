@@ -11,9 +11,9 @@ RSpec.describe Category, type: :model do
 
   subject do
     Category.new(
-      name: "Lunch",
-      icon: "lunch.icon",
-      user: user
+      name: 'Lunch',
+      icon: 'lunch.icon',
+      user:
     )
   end
 
@@ -24,7 +24,7 @@ RSpec.describe Category, type: :model do
     expect(subject).not_to be_valid
   end
 
-  it "should have an email" do
+  it 'should have an email' do
     subject.icon = nil
     expect(subject).not_to be_valid
   end

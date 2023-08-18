@@ -13,15 +13,15 @@ RSpec.describe Category, type: :model do
     Category.create!(
       name: 'Lunch',
       icon: 'lunch.icon',
-      user: user
+      user:
     )
   end
 
   subject do
     Entity.new(
-      name: "Lunch",
+      name: 'Lunch',
       amount: 20,
-      category: category
+      category:
     )
   end
 
@@ -32,13 +32,12 @@ RSpec.describe Category, type: :model do
     expect(subject).not_to be_valid
   end
 
-  it "should have amount" do
+  it 'should have amount' do
     subject.amount = nil
     expect(subject).not_to be_valid
   end
 
-
-  it "should have catrgory" do
+  it 'should have catrgory' do
     subject.category_id = nil
     expect(subject).not_to be_valid
   end
