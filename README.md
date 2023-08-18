@@ -17,6 +17,7 @@
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
+  - [Demo](#live-demo)
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
@@ -86,7 +87,11 @@ Clone this repository to your desired folder:
   git clone https://github.com/Lul-Abdifan/Expense-tracker.git
   cd Expense-tracker
 ```
+### Live Demo
 
+```sh
+[Live](https://expense-tracker-uvao.onrender.com/)
+```
 ### Install
 
 Install this project with:
