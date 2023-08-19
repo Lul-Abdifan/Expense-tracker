@@ -161,7 +161,7 @@ If you like this project you can give it a star!
 
 I would like to thanks Microverse for this learning opportunity.
 
-I would like also The [Creative Commons license of the design](https://creativecommons.org/licenses/by-nc/4.0/) for incredible design
+I would like to thank Gregoire Vella on Behance for incredible design [Creative Commons license of the design](https://creativecommons.org/licenses/by-nc/4.0/) 
 
 
 <p align="right"><a href="#readme-top">Back to top</a></p>
