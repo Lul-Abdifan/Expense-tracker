@@ -90,7 +90,7 @@ Clone this repository to your desired folder:
 ### Live Demo
 
 ```sh
-[Live](https://expense-tracker-uvao.onrender.com/)
+[Live Demo](https://expense-track-s9ld.onrender.com/)
 ```
 ### Install
 
