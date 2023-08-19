@@ -81,5 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: moneytracker_production
-  username: hope
+  url: <%= ENV['DATABASE_URL'] %>
